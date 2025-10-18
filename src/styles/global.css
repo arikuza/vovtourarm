@@ -413,6 +413,9 @@ body {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: 700;
+  line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .tour-info p {
@@ -632,6 +635,10 @@ body {
   .tours-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .tour-info h3 {
+    font-size: 1.2rem;
   }
   
   .features-grid {
