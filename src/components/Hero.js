@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { withPrefix } from "gatsby"
 import { useLanguage } from "../context/LanguageContext"
 import { getTranslation } from "../locales"
 import { backgrounds as backgroundImages } from "../data/image-manifest"
@@ -9,12 +10,12 @@ const Hero = () => {
   const t = getTranslation(language)
 
   const fallbackBackgrounds = [
-    "/images/IMG_6327.JPG",
-    "/images/IMG_6313.JPG",
-    "/images/IMG_5357.JPG"
+    withPrefix("/images/IMG_6327.JPG"),
+    withPrefix("/images/IMG_6313.JPG"),
+    withPrefix("/images/IMG_5357.JPG")
   ]
   const availableBackgrounds =
-    backgroundImages.length > 0 ? backgroundImages : fallbackBackgrounds
+    backgroundImages.length > 0 ? backgroundImages.map(img => withPrefix(img)) : fallbackBackgrounds
 
   const heroMessages = [
     {

@@ -1,4 +1,5 @@
 import React, { useMemo } from "react"
+import { withPrefix } from "gatsby"
 import { useLanguage } from "../context/LanguageContext"
 import { getTranslation } from "../locales"
 import { backgrounds } from "../data/image-manifest"
@@ -8,7 +9,8 @@ const FeaturedSection = () => {
   const t = getTranslation(language)
 
   const backgroundImage = useMemo(() => {
-    return backgrounds[0] || "/images/IMG_6401.JPG"
+    const img = backgrounds[0] || "/images/IMG_6401.JPG"
+    return img.startsWith('http') ? img : withPrefix(img)
   }, [])
 
   const features = [

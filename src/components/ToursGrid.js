@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import { toursData } from "../data/tours-data"
 import { useLanguage } from "../context/LanguageContext"
 import { getTranslation } from "../locales"
@@ -66,6 +66,8 @@ const ToursGrid = () => {
                 : null) ||
               "/images/IMG_6327.JPG"
 
+            const imagePath = selectedImage.startsWith('http') ? selectedImage : withPrefix(selectedImage)
+
             return (
               <Link
                 key={tour.id}
@@ -75,7 +77,7 @@ const ToursGrid = () => {
                 data-aos-delay={index * 100}
               >
                 <div className="tour-image-wrapper">
-                  <img src={selectedImage} alt={tourName} />
+                  <img src={imagePath} alt={tourName} />
                   <div className="tour-overlay">
                     <span className="tour-btn">{t.tours.viewDetails}</span>
                   </div>

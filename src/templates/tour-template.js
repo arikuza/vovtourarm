@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react"
 import Layout from "../components/Layout"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import { getTranslation } from "../locales"
 import { tourImages, backgrounds } from "../data/image-manifest"
 import "../styles/tour-page.css"
@@ -71,13 +71,13 @@ const TourTemplate = ({ pageContext }) => {
   const contactText = translation.contact
 
   const defaultFallbacks = [
-    "/images/IMG_6169.JPG",
-    "/images/IMG_6300.JPG",
-    "/images/IMG_6313.JPG",
-    "/images/IMG_6327.JPG"
+    withPrefix("/images/IMG_6169.JPG"),
+    withPrefix("/images/IMG_6300.JPG"),
+    withPrefix("/images/IMG_6313.JPG"),
+    withPrefix("/images/IMG_6327.JPG")
   ]
 
-  const fallbackPool = [...backgrounds, ...defaultFallbacks]
+  const fallbackPool = [...backgrounds.map(url => withPrefix(url)), ...defaultFallbacks]
   const fallbackImages = fallbackPool.slice(0, 4).map((url) => ({
     url,
     title: "",
@@ -88,11 +88,14 @@ const TourTemplate = ({ pageContext }) => {
   const manifestImages = tourImages[String(currentTour.id)] || []
   const galleryImages = manifestImages.length > 0
     ? manifestImages.map((url, index) => ({
-        url,
+        url: url.startsWith('http') ? url : withPrefix(url),
         title: metadataImages[index]?.title || "",
         caption: metadataImages[index]?.caption || ""
       }))
-    : metadataImages
+    : metadataImages.map(img => ({
+        ...img,
+        url: img.url.startsWith('http') ? img.url : withPrefix(img.url)
+      }))
 
   const tourGalleryImages =
     galleryImages.length > 0
