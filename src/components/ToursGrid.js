@@ -83,7 +83,7 @@ const ToursGrid = () => {
                   </div>
                 </div>
                 <div className="tour-info">
-                  <h3>{tourName}</h3>
+                  <h3>№{tour.id} · {tourName}</h3>
                   <p>{introText}</p>
                   <div className="tour-price">
                     {priceSummary || t.tours.priceOnRequest}

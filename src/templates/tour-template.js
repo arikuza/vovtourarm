@@ -156,7 +156,7 @@ const TourTemplate = ({ pageContext }) => {
           <div className="tour-hero-overlay" />
           <div className="tour-hero-content">
             <Link to="/#tours" className="back-link">{toursText.backToTours}</Link>
-            <h1 className="tour-page-title">{tourName}</h1>
+            <h1 className="tour-page-title">№{currentTour.id} · {tourName}</h1>
             <p className="tour-page-subtitle">{heroSubtitle}</p>
           </div>
         </div>
@@ -309,5 +309,5 @@ export const Head = ({ pageContext }) => {
   const ruName = translationsData.ru?.name
   const enName = translationsData.en?.name
   const title = ruName || enName || "Tour"
-  return <title>{title} | VOVTOURARM</title>
+  return <title>№{tour.id} · {title} | VOVTOURARM</title>
 }
