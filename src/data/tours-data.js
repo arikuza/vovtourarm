@@ -1,0 +1,867 @@
+module.exports = {
+  toursData: [
+    {
+      id: 1,
+      slug: "gutanassar-sevan-dilijan",
+      translations: {
+        ru: {
+          name: "Гутанасар — Севан — Севанаванк — Дилижан — Агарцин",
+          intro: "Приглашаем вас в путешествие по живописным местам Армении — от вулканических ландшафтов до прохладных хвойных лесов Дилижана. В течение одного дня вы увидите контрастную красоту страны: голубые воды Севана, древние монастыри и горные виды, которые невозможно забыть.",
+          route: [
+            {
+              title: "Гутанасар — потухший вулкан и чёрные стены",
+              text: "Гутанасар (2 299 м) — потухший вулкан вулканического района Гегамских гор. Склоны здесь покрыты травой, но местами открываются впечатляющие разрезы вулканических пород — многослойные чёрные стены из застывшего пепла и тефры. Это одно из самых наглядных мест в Армении, где можно буквально увидеть слои древних извержений. Район также известен месторождениями обсидиана — вулканического стекла, которое использовали ещё в доисторические времена. По маршруту предусмотрен фотостоп у смотровых точек; при желании группы возможно подняться выше для панорамного вида."
+            },
+            {
+              title: "Озеро Севан — жемчужина Армении",
+              text: "Далее путь лежит к одному из самых высокогорных озёр мира — Севану. Голубая гладь воды, свежий воздух и бескрайняя линия горизонта создают атмосферу спокойствия. По желанию можно остановиться у смотровой площадки или в одном из кафе с видом на озеро."
+            },
+            {
+              title: "Монастырь Севанаванк",
+              text: "Расположенный на полуострове, Севанаванк предлагает один из самых узнаваемых видов Армении. Подъём по лестнице награждается видом на озеро с высоты. Здесь вы услышите истории о монастыре, монашеской школе и легендах этого места."
+            },
+            {
+              title: "Дилижан — армянская Швейцария",
+              text: "Мы отправляемся в Дилижан — город, утопающий в зелени. Уютные улочки, свежий хвойный воздух и спокойная атмосфера курортного городка создают ощущение расслабленности. По запросу можно сделать остановку в местных колоритных кафе или прогуляться по исторической улице Шараамбeyan."
+            },
+            {
+              title: "Монастырь Агарцин",
+              text: "Финальная точка маршрута — скрытый в лесах монастырь Агарцин. Здесь особая тишина, которой пропитан каждый камень древних стен. Идеальное место, чтобы завершить день, почувствовав атмосферу истории и уединения."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Маршрутная поддержка",
+            "Фото-остановки по пути",
+            "Возможность адаптации тура под пожелания участников (дополнительные точки, кафе, смотровые площадки)"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "45000" },
+            { type: "Минивэн (до 6 человек)", amount: "60000" },
+            { type: "Гид", amount: "20000" }
+          ],
+          notes: "По желанию можно добавить остановки в кафе, дегустацию местной кухни или дополнительные локации — маршрут гибкий и настраивается индивидуально."
+        },
+        en: {
+          name: "Gutanassar – Sevan – Sevanavank – Dilijan – Haghartsin",
+          intro: "Join a day trip through Armenia's contrasting landscapes—from volcanic slopes to the conifer forests of Dilijan. In one day you'll see Lake Sevan's deep blue water, centuries-old monasteries, and mountain vistas you won't forget.",
+          route: [
+            {
+              title: "Gutanassar – dormant volcano and black walls",
+              text: "Gutanassar (2,299 m) is a dormant volcano in the Gegham range. Grassy slopes reveal dramatic sections of volcanic layers—the stacked black walls of solidified ash and tuff. The area is also famous for obsidian deposits used since prehistoric times. We stop at viewpoints for photos, with an optional short climb for wider panoramas."
+            },
+            {
+              title: "Lake Sevan – the blue pearl of Armenia",
+              text: "Continue to one of the world's highest freshwater lakes. The calm blue surface, fresh air, and endless horizon make a peaceful break. We can pause at an overlook or a lakeside café if you wish."
+            },
+            {
+              title: "Sevanavank Monastery",
+              text: "Sevanavank sits on the peninsula and offers one of Armenia's most iconic views. A short staircase leads up to the churches and sweeping lake panoramas. We share the monastery's stories, its school, and local legends."
+            },
+            {
+              title: "Dilijan – the Armenian Switzerland",
+              text: "We continue to Dilijan, a town wrapped in forests. Cobblestone streets, artisan cafés, and mountain air create a relaxed resort feel. Stops can include the historic Sharambeyan street, craft shops, or a coffee break—it's up to you."
+            },
+            {
+              title: "Haghartsin Monastery",
+              text: "The day ends at the secluded Haghartsin Monastery hidden in the woods. Quiet courtyards and stone churches make a peaceful finale before returning to Yerevan."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Flexible itinerary support",
+            "Photo stops during the day",
+            "Ability to adapt the schedule to your wishes (extra viewpoints, cafés, additional stops)"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "45000" },
+            { type: "Minivan (up to 6 people)", amount: "60000" },
+            { type: "Guide", amount: "20000" }
+          ],
+          notes: "We can add café visits, tastings by the lake, or extra viewpoints on request—the itinerary stays flexible."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80",
+          title: "Sevan Peninsula",
+          caption: "Panoramic views of the lake"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+          title: "Sevanavank Monastery",
+          caption: "9th century monastery overlooking the lake"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80",
+          title: "Dilijan Old Town",
+          caption: "Traditional Armenian architecture"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+          title: "Haghartsin Monastery",
+          caption: "Hidden monastery in the forest"
+        }
+      ]
+    },
+    {
+      id: 2,
+      slug: "khor-virap-noravank-tatev-devils-bridge",
+      translations: {
+        ru: {
+          name: "Хор Вирап — Нораванк — Татев — Канатная дорога — Чёртов мост",
+          intro: "Выезд ранним утром, возвращение поздно вечером. Маршрут построен так, чтобы увидеть ключевые достопримечательности регионов Вайоц Дзор и Сюник без спешки, с возможностью остановок на смотровых точках и времени для прогулок у монастырей.",
+          route: [
+            {
+              title: "Хор Вирап — панорама Арарата",
+              text: "Первая остановка — монастырь Хор Вирап, расположенный у самой границы с Турцией. Это одно из лучших мест для панорамного вида на гору Арарат. Здесь также находится историческая усыпальница, где по преданию держали Григория Просветителя. Фотоостановка и время для прогулки по территории."
+            },
+            {
+              title: "Нораванк — монастырь среди красных скал",
+              text: "Далее маршрут проходит к ущелью красных скал, где расположен монастырь Нораванк. Архитектура XIII века и контраст камня с окружающим каньоном делают это место одним из самых узнаваемых в Армении."
+            },
+            {
+              title: "Канатная дорога Крылья Татева",
+              text: "Переезд к канатной дороге, которая занесена в Книгу рекордов Гиннесса как самая длинная беспересадочная канатная дорога в мире. Подъём занимает около 12 минут в одну сторону и открывает вид на ущелье Воротан и террасированные склоны."
+            },
+            {
+              title: "Монастырь Татев",
+              text: "После подъёма — посещение монастырского комплекса X века. Татев был одним из главных духовных и образовательных центров средневековой Армении. Время для осмотра территории, смотровых площадок и исторических построек."
+            },
+            {
+              title: "Чёртов мост — минеральные террасы и сталактиты в ущелье Воротан",
+              text: "Природная арка над рекой Воротан с известковыми отложениями и террасами. Под сводом видны натёчные образования и сталактиты, сформированные минеральной водой. С верхней площадки открывается обзор моста и русла ниже. По желанию группы возможен спуск к нижним террасам: около 10–20 минут по тропе в одну сторону, выход к каскадам и природным чашам. Уровень сложности — лёгкий/средний; камни местами влажные и скользкие. Рекомендуется закрытая нескользящая обувь и запас воды. В случае непогоды или повышенного уровня воды спуск не проводится — осмотр с верхних точек."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фотоостановки и смотровые точки в пути",
+            "Гибкая остановка по запросу (кафе, панорамные площадки)"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "85000" },
+            { type: "Минивэн (до 6 человек)", amount: "105000" },
+            { type: "Гид", amount: "30000" }
+          ],
+          notes: "Также возможно добавить остановки по запросу, например, дегустацию местной кухни или посещение винодельни по маршруту."
+        },
+        en: {
+          name: "Khor Virap – Noravank – Tatev Cableway – Tatev – Devil's Bridge",
+          intro: "We leave Yerevan early and return late in the evening. The pace lets you enjoy the highlights of Vayots Dzor and Syunik without rushing, with time for viewpoints and monastery walks.",
+          route: [
+            {
+              title: "Khor Virap – panorama of Mount Ararat",
+              text: "Our first stop is Khor Virap, located right beside the Turkish border. It's one of the best spots for a panoramic view of Mount Ararat. You can also visit the historic pit where Gregory the Illuminator was imprisoned. We pause for photos and a walk around the grounds."
+            },
+            {
+              title: "Noravank – monastery in the red canyon",
+              text: "We continue into the red-rock canyon to Noravank Monastery. The 13th-century architecture set against the canyon walls makes this one of Armenia's most striking sights."
+            },
+            {
+              title: "Wings of Tatev cableway",
+              text: "Next is the cable car listed in the Guinness World Records as the longest reversible cableway. The 12-minute ride opens dramatic views of the Vorotan gorge and terraced slopes."
+            },
+            {
+              title: "Tatev Monastery",
+              text: "After the ascent we explore the 10th-century Tatev complex, once a major religious and educational center. There's time to stroll the courtyards and viewpoints."
+            },
+            {
+              title: "Devil's Bridge – mineral terraces in the Vorotan gorge",
+              text: "The route ends at a natural arch over the Vorotan River, covered with mineral terraces and stalactites. From the upper platform you can see the bridge and the river below. If the group is up for it, we can descend 10–20 minutes to the lower terraces. The walk is easy to moderate but rocks can be wet, so closed non-slip shoes and water are recommended. In poor weather or high water we view it from above."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo and viewpoint stops",
+            "Flexible extra stops on request (cafés, scenic overlooks)"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "85000" },
+            { type: "Minivan (up to 6 people)", amount: "105000" },
+            { type: "Guide", amount: "30000" }
+          ],
+          notes: "We can add local food tastings, winery visits, or other stops along the way on request."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
+          title: "Wings of Tatev",
+          caption: "Longest reversible cable car"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1564594736624-def7a10ab047?w=800&q=80",
+          title: "Tatev Monastery",
+          caption: "Medieval architectural masterpiece"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?w=800&q=80",
+          title: "Vorotan Gorge",
+          caption: "Dramatic canyon views"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&q=80",
+          title: "Devil's Bridge",
+          caption: "Natural bridge with hot springs"
+        }
+      ]
+    },
+    {
+      id: 3,
+      slug: "agarak-amberd-kari-alphabet-ohannavank",
+      translations: {
+        ru: {
+          name: "Агарак — Амберд — Озеро Кари — Алфавит — Оганаванк",
+          intro: "Выезд ранним утром, возвращение в Ереван вечером. Маршрут проходит по ключевым достопримечательностям Арагацотнской области, сочетая археологию, историю, горные пейзажи и символику армянской письменности.",
+          route: [
+            {
+              title: "Археологический памятник Агарак",
+              text: "Первая остановка — древнее поселение Агарак, один из самых значимых археологических комплексов бронзового и урартского периода. На территории находятся высеченные в скале святилища, следы древних строений и каменные платформы, использовавшиеся как культовые объекты. Осмотр открытых участков раскопок и обзорное объяснение структуры древнего поселения."
+            },
+            {
+              title: "Крепость Амберд",
+              text: "Подъём к средневековой крепости Амберд, расположенной на высоте около 2 300 м над уровнем моря. Крепость сохранила оборонительные стены и цитадель, откуда открывается вид на ущелье и горные хребты. Рядом — церковь XI века и фрагменты оборонительных сооружений. Время для прогулки и фото."
+            },
+            {
+              title: "Озеро Кари",
+              text: "Далее маршрут поднимается выше по склону Арагаца к высокогорному озеру Кари. Озеро ледникового происхождения расположено на высоте около 3 200 м. Короткая остановка у смотровой площадки, возможность выйти к берегу и осмотреть панораму."
+            },
+            {
+              title: "Памятник армянскому алфавиту",
+              text: "Спуск по маршруту с остановкой у мемориального комплекса армянского алфавита. Каменные символы армянских букв расположены у подножия Арагаца и посвящены создателю письменности — Месропу Маштоцу. Возможность сделать фото и осмотреть ансамбль."
+            },
+            {
+              title: "Монастырь Оганаванк",
+              text: "Заключительная точка — монастырский комплекс Оганаванк, расположенный на краю ущелья. Архитектура XIII века и расположение делают его одной из наиболее выразительных святынь региона. Время для осмотра территории и смотровой площадки с видом на каньон."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фотоостановки",
+            "Гибкие остановки по запросу"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "45000" },
+            { type: "Минивэн (до 6–7 человек)", amount: "55000" },
+            { type: "Гид", amount: "20000" }
+          ],
+          notes: "По запросу возможно добавить остановки в кафе или расширить маршрут дополнительными точками."
+        },
+        en: {
+          name: "Agarak – Amberd – Lake Kari – Alphabet Monument – Ohannavank",
+          intro: "We set out early and return to Yerevan in the evening. The tour covers the key sights of Aragatsotn Province, combining archaeology, history, mountain scenery, and the symbolism of the Armenian alphabet.",
+          route: [
+            {
+              title: "Agarak archaeological site",
+              text: "The first stop is the ancient settlement of Agarak, one of the most significant Bronze and Urartian archaeological complexes. You'll see rock-cut sanctuaries, foundations of ancient structures, and ritual stone platforms. We walk through the excavated areas and explain how the settlement was organized."
+            },
+            {
+              title: "Amberd Fortress",
+              text: "We climb to Amberd Fortress, standing about 2,300 m above sea level. The fortress retains its defensive walls and citadel with sweeping views over the gorge and mountain ridges. Nearby is an 11th-century church and remnants of fortifications. There's time for a relaxed stroll and photos."
+            },
+            {
+              title: "Lake Kari",
+              text: "The route continues higher up Mt. Aragats to the glacial Lake Kari at roughly 3,200 m. We stop at the viewpoint, with time to walk to the shore and take in the scenery."
+            },
+            {
+              title: "Armenian Alphabet Monument",
+              text: "Descending, we pause at the monument dedicated to the Armenian alphabet. Monumental stone letters celebrate Mesrop Mashtots, the alphabet's creator. It's a great spot for photos and to explore the ensemble."
+            },
+            {
+              title: "Ohannavank Monastery",
+              text: "The final stop is Ohannavank Monastery on the edge of the canyon. Its 13th-century architecture and dramatic setting make it one of the region's most expressive landmarks. We walk the grounds and the viewpoint before heading back."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo stops",
+            "Flexible detours on request"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "45000" },
+            { type: "Minivan (up to 6–7 people)", amount: "55000" },
+            { type: "Guide", amount: "20000" }
+          ],
+          notes: "Café breaks or extra sites can be added on request."
+        }
+      },
+      images: [
+        {
+          url: "/images/IMG_7478.JPG",
+          title: "Agarak Archaeological Site",
+          caption: "Ancient rock-cut sanctuaries"
+        },
+        {
+          url: "/images/IMG_6169.JPG",
+          title: "Amberd Fortress",
+          caption: "Medieval stronghold on Mt. Aragats"
+        },
+        {
+          url: "/images/IMG_6313.JPG",
+          title: "Lake Kari",
+          caption: "Glacial lake on Aragats plateau"
+        },
+        {
+          url: "/images/IMG_6327.JPG",
+          title: "Ohannavank Monastery",
+          caption: "Monastery perched over the gorge"
+        }
+      ]
+    },
+    {
+      id: 4,
+      slug: "sevan-sevanavank-dimats-jeep",
+      translations: {
+        ru: {
+          name: "Севан — Севанаванк — Джип-тур на гору Димац",
+          intro: "Индивидуальный формат с выездом из Еревана. Тур включает осмотр озера Севан и монастыря Севанаванк, после чего начинается джип-подъём к плато Димац с остановками на смотровых точках.",
+          route: [
+            {
+              title: "Озеро Севан",
+              text: "Первая остановка — высокогорное озеро Севан. Короткая прогулка у берега и возможность сделать фото на смотровых точках. По желанию — остановка в прибрежной зоне или у панорамной площадки."
+            },
+            {
+              title: "Монастырь Севанаванк",
+              text: "Подъём на полуостров к монастырю IX века. С площадки у Севанаванка открывается узнаваемый вид на озеро, полуостров и горные хребты. Время для осмотра территории и подхода к панорамным точкам."
+            },
+            {
+              title: "Джип-тур на гору Димац",
+              text: "Переезд к точке начала 4×4-участка (в районе Хагарцин/Техут) и пересадка на внедорожник."
+            },
+            {
+              title: "Джип-участок — подъём на верхнее плато Димаца",
+              text: "Продолжительность ориентировочно 5–7 часов с остановками в зависимости от погоды и темпа группы. Высота около 2 378 м над уровнем моря. Основная часть маршрута — подъём на верхнее плато Димаца. Дорога грунтовая и каменистая, используется полноценный 4×4. Рекомендуется закрытая удобная обувь и дополнительный слой одежды — на высоте температура ниже, чем у Севана."
+            }
+          ],
+          included: [
+            "Переезды по маршруту",
+            "Джип-участок на Димац",
+            "Фото-остановки"
+          ],
+          price: [
+            { type: "Индивидуальный тур (до 3 человек)", amount: "90000" },
+            { type: "Минивэн", amount: "по запросу" }
+          ],
+          notes: "В стоимость входят все переезды, джип-подъём на Димац и фотостопы по маршруту. По желанию можно добавить остановку в кафе у Севана или расширить маршрут дополнительными локациями."
+        },
+        en: {
+          name: "Lake Sevan – Sevanavank – Off-road to Mount Dimats",
+          intro: "A private departure from Yerevan that combines Lake Sevan and Sevanavank with an off-road ascent to the Dimats plateau, complete with scenic stops.",
+          route: [
+            {
+              title: "Lake Sevan",
+              text: "We begin at high-altitude Lake Sevan. Enjoy a short walk along the shore and capture the views from the overlooks. If you wish, we can stop by the lakeside area or a panoramic café."
+            },
+            {
+              title: "Sevanavank Monastery",
+              text: "Climb the peninsula to the 9th-century monastery for classic views of the lake, peninsula, and surrounding ridges. There's time to walk around the churches and panoramic points."
+            },
+            {
+              title: "Transfer to the 4×4 section",
+              text: "We drive to the starting point near Haghartsin/Tehut and switch to a proper off-road vehicle."
+            },
+            {
+              title: "Off-road ascent to the Dimats plateau",
+              text: "The jeep portion lasts about 5–7 hours with stops, depending on weather and pace. We climb to around 2,378 m and reach the open plateau for sweeping views. The track is a mix of dirt and stones, so sturdy closed shoes and an extra layer are recommended."
+            }
+          ],
+          included: [
+            "Transport throughout the itinerary",
+            "4×4 ascent to Dimats",
+            "Photo stops"
+          ],
+          price: [
+            { type: "Private tour (up to 3 people)", amount: "90000" },
+            { type: "Minivan", amount: "On request" }
+          ],
+          notes: "The rate covers all transfers, the off-road climb, and photo stops. We can add a café break at Sevan or extend the route with more locations on request."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80",
+          title: "Lake Sevan",
+          caption: "High-altitude alpine lake"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+          title: "Sevanavank",
+          caption: "Monastery overlooking Sevan"
+        },
+        {
+          url: "/images/IMG_6327.JPG",
+          title: "Dimats Plateau",
+          caption: "Off-road ascent to the plateau"
+        }
+      ]
+    },
+    {
+      id: 5,
+      slug: "khor-virap-magellan-areni-noravank-jermuk-mermaids-hair",
+      translations: {
+        ru: {
+          name: "Хор Вирап — Пещера Магеллана — Пещера Арины — Нораванк — Джермук — Водопад «Волосы Русалки»",
+          intro: "Индивидуальный тур с выездом из Еревана, включающий посещение пещерных комплексов Арени, монастыря Нораванк и курортной зоны Джермука с водопадом «Волосы Русалки».",
+          route: [
+            {
+              title: "Хор Вирап",
+              text: "Маршрут начинается у монастыря Хор Вирап, откуда открывается близкая перспектива на гору Арарат. Время для прогулки по территории и осмотра древней темницы, связанной с историей Григория Просветителя."
+            },
+            {
+              title: "Пещера Магеллана",
+              text: "Подъезд к каньону, короткий подход к входу. Организованный вход в открытую безопасную часть пещеры, длиной около 300–350 метров. Внутри находятся натёчные образования, известковые стенки и оборудованный маршрут. Фотостоп внутри доступного сегмента."
+            },
+            {
+              title: "Пещера Арины (Areni-1)",
+              text: "Остановка у археологического комплекса Areni-1. Возможность войти в разрешённую открытую часть пещеры, осмотр зала и ниш. Это одно из важнейших археологических мест региона — здесь найдены древнейшие следы виноделия и быта эпохи халколита. Короткий фотостоп у входа и внутри."
+            },
+            {
+              title: "Нораванк",
+              text: "Переезд в ущелье красных скал к монастырю Нораванк. Архитектурный комплекс XIII века с узнаваемой лестницей и верхней часовней. Время для осмотра и фото на панорамной площадке."
+            },
+            {
+              title: "Джермук",
+              text: "Въезд в курортный город Джермук. Короткий выход в центральную часть, прогулка и возможность посетить бювет с минеральной водой."
+            },
+            {
+              title: "Водопад «Волосы Русалки»",
+              text: "Завершение маршрута у водопада, который locals называют «Волосы Русалки». Остановка на верхней смотровой площадке с возможностью спуска к нижнему уровню по оборудованной тропе. Финальный фотостоп."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Внешний осмотр и вход в открытые части пещер",
+            "Фото-остановки"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "75000" },
+            { type: "Минивэн (до 6–7 человек)", amount: "95000" },
+            { type: "Гид", amount: "25000" }
+          ],
+          notes: "В стоимость входят все переезды и остановки по маршруту. По запросу возможно добавить посещение винодельни Арени, кафе или дополнительные смотровые точки."
+        },
+        en: {
+          name: "Khor Virap – Magellan Cave – Areni Cave – Noravank – Jermuk – Mermaid's Hair Waterfall",
+          intro: "A private tour from Yerevan that combines the caves of Areni, the Noravank monastery complex, and the spa town of Jermuk with its Mermaid's Hair waterfall.",
+          route: [
+            {
+              title: "Khor Virap",
+              text: "We begin at Khor Virap Monastery with its close-up perspective of Mount Ararat. There's time to explore the grounds and descend into the historic pit linked to Gregory the Illuminator."
+            },
+            {
+              title: "Magellan Cave",
+              text: "We enter the canyon and approach the cave entrance. A guided visit covers the open, safe section of about 300–350 meters, featuring dripstone formations and limestone walls. There are designated photo stops inside."
+            },
+            {
+              title: "Areni-1 Cave",
+              text: "Next we stop at the Areni-1 archaeological complex. You can step into the authorized chamber to see the niches and excavation areas. This is one of the region's most important sites, where some of the world's oldest evidence of winemaking was found."
+            },
+            {
+              title: "Noravank Monastery",
+              text: "We drive into the red-rock gorge to Noravank. The 13th-century complex, with its iconic narrow staircase and upper chapel, offers spectacular photo opportunities."
+            },
+            {
+              title: "Jermuk",
+              text: "Arrival in the spa town of Jermuk. We walk through the central area and, if you wish, visit the mineral-water gallery."
+            },
+            {
+              title: "Mermaid's Hair Waterfall",
+              text: "The tour ends at the waterfall nicknamed Mermaid's Hair. We stop at the upper viewpoint, with an option to follow the equipped trail down to the lower level for a final photo session."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Exterior visits and entry to the open sections of the caves",
+            "Photo stops"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "75000" },
+            { type: "Minivan (up to 6–7 people)", amount: "95000" },
+            { type: "Guide", amount: "25000" }
+          ],
+          notes: "All transfers and planned stops are included. On request we can add a visit to an Areni winery, a café break, or more viewpoints."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&q=80",
+          title: "Devil's Bridge",
+          caption: "Natural bridge and mineral pools"
+        },
+        {
+          url: "/images/IMG_5357.JPG",
+          title: "Areni Caves",
+          caption: "Archaeological cave complex"
+        },
+        {
+          url: "/images/IMG_4890.JPG",
+          title: "Jermuk Waterfall",
+          caption: "Mermaid's Hair cascades"
+        }
+      ]
+    },
+    {
+      id: 6,
+      slug: "gyumri-black-fortress-arychavank-dashtadem",
+      translations: {
+        ru: {
+          name: "Гюмри — Чёрная крепость — Монастырь Арычаванг — Крепость Даштадем",
+          intro: "Индивидуальный тур с выездом из Еревана. Маршрут включает прогулку по историческому центру Гюмри и посещение двух крепостных объектов региона.",
+          route: [
+            {
+              title: "Гюмри",
+              text: "Прогулка по историческому центру Гюмри — район Кумайри, традиционная городская архитектура XIX века, возможность остановки в атмосферном кафе в армянском стиле."
+            },
+            {
+              title: "Чёрная крепость (Сев Берд)",
+              text: "Осмотр базальтовой крепости, построенной на стратегической высоте. Короткий пешеходный выход к обзорной точке, фотостоп по периметру стены."
+            },
+            {
+              title: "Монастырь Арычаванг",
+              text: "Переезд к расположенному отдельно монастырю Арычаванг. Тихая монастырская территория, каменная церковь и выход к смотровой линии на соседние хребты."
+            },
+            {
+              title: "Крепость Даштадем",
+              text: "Финальный объект — крепость Даштадем, одна из наиболее сохранившихся оборонительных построек Армении. Прогулка по внешнему укреплённому периметру, осмотр башенной части и защитных стен."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фото-остановки",
+            "Гибкие остановки по запросу"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "60000" },
+            { type: "Минивэн (до 6–7 человек)", amount: "70000" },
+            { type: "Гид", amount: "25000" }
+          ],
+          notes: "В стоимость входят все переезды и остановки по маршруту. По желанию можно добавить остановки в кафе, дополнительные смотровые площадки или расширить программу."
+        },
+        en: {
+          name: "Gyumri – Black Fortress – Arichavank – Dashtadem Fortress",
+          intro: "A private tour from Yerevan featuring a walk through Gyumri's historic center and visits to two of the region's notable fortifications.",
+          route: [
+            {
+              title: "Gyumri",
+              text: "Stroll the Kumayri district with its 19th-century architecture and cobbled streets. We can pause at a traditional café if you like."
+            },
+            {
+              title: "Black Fortress (Sev Berd)",
+              text: "Explore the basalt fortress built on a strategic rise. A short walk brings you to the lookout points for photos along the walls."
+            },
+            {
+              title: "Arichavank Monastery",
+              text: "Drive to the solitary Arichavank Monastery. The quiet site features a stone church and open views towards the surrounding ranges."
+            },
+            {
+              title: "Dashtadem Fortress",
+              text: "Finish at Dashtadem, one of Armenia's best-preserved fortresses. We circle the outer walls, tower, and defensive lines before returning."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo stops",
+            "Flexible extra stops on request"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "60000" },
+            { type: "Minivan (up to 6–7 people)", amount: "70000" },
+            { type: "Guide", amount: "25000" }
+          ],
+          notes: "All transfers and planned stops are included. Café visits, extra viewpoints, or an expanded program can be arranged on request."
+        }
+      },
+      images: [
+        {
+          url: "/images/IMG_6169.JPG",
+          title: "Gyumri Kumayri District",
+          caption: "Historic 19th century architecture"
+        },
+        {
+          url: "/images/IMG_6313.JPG",
+          title: "Black Fortress",
+          caption: "Basalt stronghold overlooking the city"
+        },
+        {
+          url: "/images/IMG_6327.JPG",
+          title: "Dashtadem Fortress",
+          caption: "Well-preserved defensive walls"
+        }
+      ]
+    },
+    {
+      id: 7,
+      slug: "noravank-shaki-tatev-cable-devils-bridge-hndzoresk",
+      translations: {
+        ru: {
+          name: "Нораванк — Водопад Шаки — Татев — Канатная дорога — Чёртов мост — Хндзореск",
+          intro: "Индивидуальный тур по южному направлению с выездом из Еревана. Без спешки, с возможностью остановок и фотопауз на ключевых точках маршрута.",
+          route: [
+            {
+              title: "Нораванк",
+              text: "Первая остановка — монастырь Нораванк, расположенный в ущелье красных скал. Прогулка по территории, подъем к верхней часовне и фотостопы с панорамой каньона."
+            },
+            {
+              title: "Водопад Шаки",
+              text: "Переезд к водопаду Шаки. Короткий подход по оборудованной тропе к нижней точке водопада. Остановка для фотосъёмки и осмотра водопада с ближней дистанции."
+            },
+            {
+              title: "Канатная дорога Крылья Татева",
+              text: "Переезд к станции канатной дороги. Подъём на Татевскую плато на канатке — продолжительность около 12 минут. Во время подъема открываются виды на ущелье Воротан."
+            },
+            {
+              title: "Монастырь Татев",
+              text: "Осмотр монастырского комплекса X века, расположенного на высоте над ущельем. Время для прогулки по территории и выхода к смотровым точкам."
+            },
+            {
+              title: "Чёртов мост",
+              text: "По желанию — переезд к природному объекту Чёртов мост в ущелье. Возможность спуститься к нижней точке (если позволяет погода и состояние тропы) и осмотреть минеральные образования и известковые стенки."
+            },
+            {
+              title: "Пещерный город Хндзореск",
+              text: "Финальный пункт — пещерный город Хндзореск. Спуск пешком по оборудованной тропе к подвесному мосту и пещерному комплексу. Осмотр скальных жилищ и возврат по той же тропе."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фото-остановки",
+            "Гибкие остановки по запросу"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "115000" },
+            { type: "Минивэн (до 6–7 человек)", amount: "130000" },
+            { type: "Гид", amount: "35000" }
+          ],
+          notes: "Маршрут включает все основные точки южного направления. Возможно добавление кафе и дополнительных остановок по пути."
+        },
+        en: {
+          name: "Noravank – Shaki Waterfall – Tatev Cableway – Tatev – Devil's Bridge – Khndzoresk",
+          intro: "A private southern Armenia itinerary from Yerevan, paced for relaxed stops and photo breaks at each highlight.",
+          route: [
+            {
+              title: "Noravank",
+              text: "The first stop is Noravank Monastery in the red-rock canyon. We walk the complex, optionally climb to the upper chapel, and enjoy canyon panoramas."
+            },
+            {
+              title: "Shaki Waterfall",
+              text: "We continue to Shaki Waterfall. A short path leads to the lower viewpoint for close-up photos of the cascade."
+            },
+            {
+              title: "Wings of Tatev cableway",
+              text: "Next is the cable car that rises to the Tatev plateau in about 12 minutes, revealing sweeping views of the Vorotan gorge."
+            },
+            {
+              title: "Tatev Monastery",
+              text: "We explore the 10th-century Tatev Monastery perched above the gorge. There's time to walk the grounds and viewpoints."
+            },
+            {
+              title: "Devil's Bridge",
+              text: "If conditions allow, we visit the natural Devil's Bridge in the gorge. You can descend to the lower level to see the mineral formations up close."
+            },
+            {
+              title: "Khndzoresk Cave Village",
+              text: "The final leg brings us to Khndzoresk. We hike the equipped trail to the suspension bridge and cave dwellings before returning the same way."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo stops",
+            "Flexible stops on request"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "115000" },
+            { type: "Minivan (up to 6–7 people)", amount: "130000" },
+            { type: "Guide", amount: "35000" }
+          ],
+          notes: "All major southern highlights are included. Café visits and extra stops can be added on request."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80",
+          title: "Wings of Tatev",
+          caption: "Cable car over Vorotan gorge"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1564594736624-def7a10ab047?w=800&q=80",
+          title: "Tatev Monastery",
+          caption: "Clifftop monastery complex"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&q=80",
+          title: "Devil's Bridge",
+          caption: "Mineral terraces and pools"
+        }
+      ]
+    },
+    {
+      id: 8,
+      slug: "sevan-sevanavank-dilijan-haghartsin",
+      translations: {
+        ru: {
+          name: "Севан — Севанаванк — Дилижан — Агарцин",
+          intro: "Неспешный однодневный маршрут по ключевым локациям: озеро Севан и панорамы с полуострова Севанаванка, прогулка по Дилижану и посещение монастыря Агарцин в лесной долине.",
+          route: [
+            {
+              title: "Озеро Севан",
+              text: "Прогулка у берега и фотостопы на смотровых."
+            },
+            {
+              title: "Монастырь Севанаванк",
+              text: "Панорама с полуострова; короткий подъём по лестнице."
+            },
+            {
+              title: "Дилижан",
+              text: "Историческая улица, ремесленные лавки и хвойный воздух."
+            },
+            {
+              title: "Монастырь Агарцин",
+              text: "Тихий комплекс среди лесов; неспешный осмотр."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фото-остановки",
+            "Гибкие остановки по запросу"
+          ],
+          price: [
+            { type: "Стоимость", amount: "По запросу" }
+          ],
+          notes: "Маршрут может быть дополнен по желанию: кафе у Севана, дополнительные смотровые площадки или остановки по пути."
+        },
+        en: {
+          name: "Sevan – Sevanavank – Dilijan – Haghartsin",
+          intro: "A relaxed one-day route covering Lake Sevan, the views from the Sevanavank peninsula, a stroll through Dilijan, and the forested Haghartsin Monastery.",
+          route: [
+            {
+              title: "Lake Sevan",
+              text: "Walk along the shore and pause at the lake viewpoints for photos."
+            },
+            {
+              title: "Sevanavank Monastery",
+              text: "Take the short staircase up the peninsula for wide panoramas of Sevan."
+            },
+            {
+              title: "Dilijan",
+              text: "Visit the historic street, artisan workshops, and enjoy the pine-scented air."
+            },
+            {
+              title: "Haghartsin Monastery",
+              text: "Explore the tranquil monastery tucked among the forests at your own pace."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo stops",
+            "Flexible stops on request"
+          ],
+          price: [
+            { type: "Rate", amount: "On request" }
+          ],
+          notes: "We can add lakeside cafés, extra viewpoints, or other stops according to your interests."
+        }
+      },
+      images: [
+        {
+          url: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80",
+          title: "Lake Sevan",
+          caption: "Panoramic views of the lake"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+          title: "Sevanavank Monastery",
+          caption: "Historic monastery on the peninsula"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80",
+          title: "Dilijan Old Town",
+          caption: "Traditional Armenian architecture"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80",
+          title: "Haghartsin Monastery",
+          caption: "Monastery hidden in the forest"
+        }
+      ]
+    },
+    {
+      id: 9,
+      slug: "garni-geghard-symphony-azat",
+      translations: {
+        ru: {
+          name: "Гарни — Симфония Камней — Гегард — Азатское водохранилище",
+          intro: "Однодневный индивидуальный тур из Еревана с посещением языческого храма Гарни, природного чуда — Симфонии Камней, монастыря Гегард и смотровой площадки у Азатского водохранилища.",
+          route: [
+            {
+              title: "Храм Гарни",
+              text: "Первая остановка — единственный сохранившийся языческий храм эллинистического периода. Гарни был построен в I веке н.э. и посвящён богу солнца Митре. Осмотр колоннады, выход к смотровой площадке над ущельем Азата и время для фото."
+            },
+            {
+              title: "Симфония Камней (Гарнийское ущелье)",
+              text: "Переезд ниже к ущелью. Короткий спуск к базальтовым колоннам — природной геологической формации, которую называют «Симфония Камней». Вертикальные шестигранные образования выглядят как органные трубы. Фотостоп у смотровой зоны."
+            },
+            {
+              title: "Монастырь Гегард",
+              text: "Далее — монастырский комплекс Гегард, частично вырубленный прямо в скальном массиве. Внутренние залы, высеченные в камне, акустические помещения и древние кельи. Комплекс включён в список наследия ЮНЕСКО."
+            },
+            {
+              title: "Азатское водохранилище",
+              text: "Финальная точка маршрута — Азатское водохранилище. Небольшая остановка на смотровой площадке с видом на бирюзовую гладь воды и окружающие горные склоны. Спокойный фотостоп перед возвращением в Ереван."
+            }
+          ],
+          included: [
+            "Транспорт по маршруту",
+            "Фото-остановки",
+            "Гибкие остановки по запросу"
+          ],
+          price: [
+            { type: "Седан (до 3 человек)", amount: "30000" },
+            { type: "Минивэн (до 6–7 человек)", amount: "40000" },
+            { type: "Гид", amount: "17000" }
+          ],
+          notes: "По желанию можно добавить остановку в кафе или смотровые площадки по маршруту. Тур гибкий и может быть адаптирован под пожелания группы."
+        },
+        en: {
+          name: "Garni – Symphony of Stones – Geghard – Azat Reservoir",
+          intro: "A private day trip from Yerevan that takes in the Garni pagan temple, the Symphony of Stones basalt columns, the UNESCO-listed Geghard Monastery, and the lookout over the turquoise Azat Reservoir.",
+          route: [
+            {
+              title: "Garni Temple",
+              text: "Our first stop is Garni, the only surviving Greco-Roman pagan temple in the region. Built in the 1st century CE and dedicated to the sun god Mihr, it offers a chance to walk the colonnade and take photos from the overlook above the Azat Gorge."
+            },
+            {
+              title: "Symphony of Stones (Garni Gorge)",
+              text: "We descend into the gorge to see the Symphony of Stones. The hexagonal basalt columns resemble organ pipes and showcase a rare geological formation. A short walk brings us to the viewpoint for photos."
+            },
+            {
+              title: "Geghard Monastery",
+              text: "Next is Geghard Monastery, partially carved directly into the cliff. The rock-hewn chambers, resonant chapels, and ancient cells reveal why this site is listed as UNESCO World Heritage."
+            },
+            {
+              title: "Azat Reservoir",
+              text: "The route finishes at the Azat Reservoir overlook. Enjoy a calm photo stop with views of the turquoise water ringed by rugged slopes before heading back to Yerevan."
+            }
+          ],
+          included: [
+            "Transport along the route",
+            "Photo stops",
+            "Flexible stops on request"
+          ],
+          price: [
+            { type: "Sedan (up to 3 people)", amount: "30000" },
+            { type: "Minivan (up to 6–7 people)", amount: "40000" },
+            { type: "Guide", amount: "17000" }
+          ],
+          notes: "Café breaks or additional viewpoints can be added on request—the itinerary stays flexible."
+        }
+      },
+      images: [
+        {
+          url: "/images/IMG_6300.JPG",
+          title: "",
+          caption: ""
+        }
+      ]
+    }
+  ]
+}
