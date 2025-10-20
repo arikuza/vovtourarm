@@ -7,7 +7,9 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
+    "build:godaddy": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:godaddy": "npm run build:godaddy && node scripts/deploy-godaddy.js",
     "predeploy": "npm run build",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
@@ -30,6 +32,8 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "dotenv": "^17.2.3",
+    "ftp-deploy": "^2.4.7",
     "gh-pages": "^6.3.0"
   }
 }

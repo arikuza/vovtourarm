@@ -16,8 +16,6 @@ export const tourImages = {
     "/images/2/photo_2025-10-19_17-19-55.jpg"
   ],
   "3": [
-    "/images/3/IMG_5578.JPG",
-    "/images/3/IMG_6401.JPG",
     "/images/3/photo_2025-10-19_17-20-17.jpg",
     "/images/3/photo_2025-10-19_17-20-18.jpg",
     "/images/3/photo_2025-10-19_17-20-19.jpg",
@@ -30,7 +28,6 @@ export const tourImages = {
     "/images/4/photo_2025-10-19_17-21-33.jpg"
   ],
   "5": [
-    "/images/5/IMG_6341.JPG",
     "/images/5/photo_2025-10-19_17-22-12 (2).jpg",
     "/images/5/photo_2025-10-19_17-22-12.jpg",
     "/images/5/photo_2025-10-19_17-22-13.jpg",
@@ -38,9 +35,13 @@ export const tourImages = {
     "/images/5/photo_2025-10-19_17-22-15.jpg",
     "/images/5/photo_2025-10-19_17-22-16.jpg"
   ],
-  "6": [],
+  "6": [
+    "/images/6/photo_2025-10-20_14-29-08.jpg",
+    "/images/6/photo_2025-10-20_14-29-11.jpg",
+    "/images/6/photo_2025-10-20_14-29-12.jpg",
+    "/images/6/photo_2025-10-20_14-29-14.jpg"
+  ],
   "7": [
-    "/images/7/IMG_6169.JPG",
     "/images/7/photo_2025-10-19_17-23-02.jpg",
     "/images/7/photo_2025-10-19_17-23-04.jpg",
     "/images/7/photo_2025-10-19_17-23-05.jpg",
