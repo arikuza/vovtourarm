@@ -266,11 +266,7 @@ const TourTemplate = ({ pageContext }) => {
               <div className="gallery-grid">
                 {tourGalleryImages.map((image, index) => (
                   <div key={index} className="gallery-image" onClick={() => openModal(index)}>
-                    <img src={image.url} alt={image.title || tourName} />
-                    <div className="image-caption">
-                      <h4>{image.title}</h4>
-                      <p>{image.caption}</p>
-                    </div>
+                    <img src={image.url} alt={tourName} />
                   </div>
                 ))}
               </div>
@@ -284,15 +280,11 @@ const TourTemplate = ({ pageContext }) => {
               <button className="modal-close" onClick={closeModal}>×</button>
               <button className="modal-prev" onClick={goToPrevious}>‹</button>
               <button className="modal-next" onClick={goToNext}>›</button>
-              <img 
-                src={tourGalleryImages[currentImageIndex].url} 
-                alt={tourGalleryImages[currentImageIndex].title}
+              <img
+                src={tourGalleryImages[currentImageIndex].url}
+                alt={tourName}
                 className="modal-image"
               />
-              <div className="modal-caption">
-                <h4>{tourGalleryImages[currentImageIndex].title}</h4>
-                <p>{tourGalleryImages[currentImageIndex].caption}</p>
-              </div>
             </div>
           </div>
         )}
