@@ -2,12 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ukalthqypssh/public_html/
-    - export NODE_ENV=production
-    - export CI=1
-    - export GATSBY_TELEMETRY_DISABLED=1
-    - export GATSBY_FEEDBACK_DISABLED=1
-    - 'if [ -f "$HOME/.bashrc" ]; then source "$HOME/.bashrc"; fi'
-    - npm ci
-    - npm run build:cpanel
     - /bin/mkdir -p "$DEPLOYPATH"
-    - /bin/cp -a public/. "$DEPLOYPATH"
+    - /bin/cp -a cpanel_public/. "$DEPLOYPATH"
+    - /bin/mkdir -p "$DEPLOYPATH/images"
+    - /bin/cp -a static/images/. "$DEPLOYPATH/images"
