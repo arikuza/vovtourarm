@@ -25,3 +25,14 @@ export const UKFlag = ({ width = 24, height = 16 }) => (
     </g>
   </svg>
 )
+
+export const ChinaFlag = ({ width = 24, height = 16 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width={width} height={height}>
+    <rect width="30" height="20" fill="#de2910"/>
+    <polygon fill="#ffde00" points="5,2 5.7,4.1 7.9,4.1 6.1,5.4 6.8,7.5 5,6.2 3.2,7.5 3.9,5.4 2.1,4.1 4.3,4.1"/>
+    <polygon fill="#ffde00" points="5,2 5.7,4.1 7.9,4.1 6.1,5.4 6.8,7.5 5,6.2 3.2,7.5 3.9,5.4 2.1,4.1 4.3,4.1" transform="translate(7.5,-0.7) rotate(23 5 5) scale(0.34)"/>
+    <polygon fill="#ffde00" points="5,2 5.7,4.1 7.9,4.1 6.1,5.4 6.8,7.5 5,6.2 3.2,7.5 3.9,5.4 2.1,4.1 4.3,4.1" transform="translate(10.1,2.1) rotate(45 5 5) scale(0.34)"/>
+    <polygon fill="#ffde00" points="5,2 5.7,4.1 7.9,4.1 6.1,5.4 6.8,7.5 5,6.2 3.2,7.5 3.9,5.4 2.1,4.1 4.3,4.1" transform="translate(10.1,5.4) rotate(23 5 5) scale(0.34)"/>
+    <polygon fill="#ffde00" points="5,2 5.7,4.1 7.9,4.1 6.1,5.4 6.8,7.5 5,6.2 3.2,7.5 3.9,5.4 2.1,4.1 4.3,4.1" transform="translate(7.5,7.8) rotate(45 5 5) scale(0.34)"/>
+  </svg>
+)

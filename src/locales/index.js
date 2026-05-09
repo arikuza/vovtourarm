@@ -1,9 +1,11 @@
 import { ru } from './ru'
 import { en } from './en'
+import { zhCN } from './zh-CN'
 
 export const translations = {
   ru,
-  en
+  en,
+  "zh-CN": zhCN
 }
 
 export const getTranslation = (language) => {

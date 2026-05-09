@@ -3,6 +3,7 @@ import { Link, withPrefix } from "gatsby"
 import { toursData } from "../data/tours-data"
 import { useLanguage } from "../context/LanguageContext"
 import { getTranslation } from "../locales"
+import { getIntlLocale, getTourContent } from "../data/tour-localization"
 import { tourImages, backgrounds } from "../data/image-manifest"
 
 const ToursGrid = () => {
@@ -20,21 +21,17 @@ const ToursGrid = () => {
         
         <div className="tours-grid">
           {tours.map((tour, index) => {
-            const translations = tour.translations || {}
-            const fallbackTranslation = translations.ru || {}
-            const currentTranslation = translations[language] || fallbackTranslation
+            const currentTranslation = getTourContent(tour, language)
 
             const tourName =
               currentTranslation.name ||
-              fallbackTranslation.name ||
               ""
             const introText =
               currentTranslation.intro ||
-              fallbackTranslation.intro ||
               ""
             const priceSource = Array.isArray(currentTranslation.price) && currentTranslation.price.length > 0
               ? currentTranslation.price
-              : fallbackTranslation.price || []
+              : []
 
             const formatPriceAmount = (amount) => {
               if (!amount) {
@@ -43,7 +40,7 @@ const ToursGrid = () => {
               const numericAmount = Number(amount)
               if (Number.isFinite(numericAmount)) {
                 return `${new Intl.NumberFormat(
-                  language === "ru" ? "ru-RU" : "en-US"
+                  getIntlLocale(language)
                 ).format(numericAmount)} ֏`
               }
               return amount

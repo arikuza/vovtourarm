@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { useLanguage } from "../context/LanguageContext"
 import { getTranslation } from "../locales"
-import { RussiaFlag, UKFlag } from "./FlagIcons"
+import { ChinaFlag, RussiaFlag, UKFlag } from "./FlagIcons"
+
+const languageOptions = [
+  { code: "ru", label: "RU", ariaLabel: "Русский", Flag: RussiaFlag },
+  { code: "en", label: "EN", ariaLabel: "English", Flag: UKFlag },
+  { code: "zh-CN", label: "中文", ariaLabel: "简体中文", Flag: ChinaFlag }
+]
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -35,22 +41,17 @@ const Navigation = () => {
         </ul>
 
         <div className="language-switcher">
-          <button 
-            className={`lang-btn ${language === 'ru' ? 'active' : ''}`}
-            onClick={() => changeLanguage('ru')}
-            aria-label="Русский"
-          >
-            <RussiaFlag />
-            <span>RU</span>
-          </button>
-          <button 
-            className={`lang-btn ${language === 'en' ? 'active' : ''}`}
-            onClick={() => changeLanguage('en')}
-            aria-label="English"
-          >
-            <UKFlag />
-            <span>EN</span>
-          </button>
+          {languageOptions.map(({ code, label, ariaLabel, Flag }) => (
+            <button
+              key={code}
+              className={`lang-btn ${language === code ? 'active' : ''}`}
+              onClick={() => changeLanguage(code)}
+              aria-label={ariaLabel}
+            >
+              <Flag />
+              <span>{label}</span>
+            </button>
+          ))}
         </div>
 
         <button 
@@ -71,26 +72,20 @@ const Navigation = () => {
           <li><Link to="/#contact" onClick={() => setMenuOpen(false)}>{t.nav.contact}</Link></li>
         </ul>
         <div className="mobile-language-switcher">
-          <button 
-            className={`lang-btn ${language === 'ru' ? 'active' : ''}`}
-            onClick={() => {
-              changeLanguage('ru')
-              setMenuOpen(false)
-            }}
-          >
-            <RussiaFlag />
-            <span>RU</span>
-          </button>
-          <button 
-            className={`lang-btn ${language === 'en' ? 'active' : ''}`}
-            onClick={() => {
-              changeLanguage('en')
-              setMenuOpen(false)
-            }}
-          >
-            <UKFlag />
-            <span>EN</span>
-          </button>
+          {languageOptions.map(({ code, label, ariaLabel, Flag }) => (
+            <button
+              key={code}
+              className={`lang-btn ${language === code ? 'active' : ''}`}
+              onClick={() => {
+                changeLanguage(code)
+                setMenuOpen(false)
+              }}
+              aria-label={ariaLabel}
+            >
+              <Flag />
+              <span>{label}</span>
+            </button>
+          ))}
         </div>
       </div>
     </nav>

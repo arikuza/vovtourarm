@@ -8,6 +8,44 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const { language } = useLanguage()
   const t = getTranslation(language)
+  const localizedHeroSlides = {
+    ru: [
+      {
+        title: "Священные горы",
+        subtitle: "Монастыри в облаках",
+        description: "Путешествие через тысячелетия духовной архитектуры"
+      },
+      {
+        title: "Озеро Севан",
+        subtitle: "Голубая жемчужина",
+        description: "Одно из крупнейших высокогорных озёр мира"
+      }
+    ],
+    en: [
+      {
+        title: "Sacred Mountains",
+        subtitle: "Monasteries in the Clouds",
+        description: "Journey through millennia of spiritual architecture"
+      },
+      {
+        title: "Lake Sevan",
+        subtitle: "The Blue Pearl",
+        description: "One of the world's largest high-altitude lakes"
+      }
+    ],
+    "zh-CN": [
+      {
+        title: "圣山",
+        subtitle: "云端修道院",
+        description: "穿越千年的精神建筑遗产"
+      },
+      {
+        title: "塞凡湖",
+        subtitle: "蓝色明珠",
+        description: "世界上最大的高山湖泊之一"
+      }
+    ]
+  }
 
   const fallbackBackgrounds = [
     withPrefix("/images/IMG_6327.JPG"),
@@ -17,29 +55,15 @@ const Hero = () => {
   const availableBackgrounds =
     backgroundImages.length > 0 ? backgroundImages.map(img => withPrefix(img)) : fallbackBackgrounds
 
+  const additionalHeroSlides =
+    localizedHeroSlides[language] || localizedHeroSlides.ru
   const heroMessages = [
     {
       title: t.hero.title,
       subtitle: t.hero.subtitle,
       description: t.hero.description
-    },
-    {
-      title: language === "ru" ? "Священные горы" : "Sacred Mountains",
-      subtitle: language === "ru" ? "Монастыри в облаках" : "Monasteries in the Clouds",
-      description:
-        language === "ru"
-          ? "Путешествие через тысячелетия духовной архитектуры"
-          : "Journey through millennia of spiritual architecture"
-    },
-    {
-      title: language === "ru" ? "Озеро Севан" : "Lake Sevan",
-      subtitle: language === "ru" ? "Голубая жемчужина" : "The Blue Pearl",
-      description:
-        language === "ru"
-          ? "Одно из крупнейших высокогорных озёр мира"
-          : "One of the world's largest high-altitude lakes"
     }
-  ]
+  ].concat(additionalHeroSlides)
   
   const slides = heroMessages.map((message, index) => ({
     image: availableBackgrounds[index % availableBackgrounds.length],

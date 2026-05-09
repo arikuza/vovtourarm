@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react"
 import Layout from "../components/Layout"
 import { Link, withPrefix } from "gatsby"
 import { getTranslation } from "../locales"
+import { getIntlLocale, getTourContent } from "../data/tour-localization"
 import { tourImages, backgrounds } from "../data/image-manifest"
 import "../styles/tour-page.css"
 
@@ -40,31 +41,27 @@ const TourTemplate = ({ pageContext }) => {
   }, [])
 
   const currentTour = tour
-  const translationsData = currentTour.translations || {}
-  const fallbackTranslation = translationsData.ru || {}
-  const tourContent = translationsData[language] || fallbackTranslation
+  const tourContent = getTourContent(currentTour, language)
 
   const tourName =
     tourContent.name ||
-    fallbackTranslation.name ||
     ""
   const heroIntro =
     tourContent.intro ||
-    fallbackTranslation.intro ||
     ""
   const routeSteps =
     Array.isArray(tourContent.route) && tourContent.route.length > 0
       ? tourContent.route
-      : fallbackTranslation.route || []
+      : []
   const includedList =
     Array.isArray(tourContent.included) && tourContent.included.length > 0
       ? tourContent.included
-      : fallbackTranslation.included || []
+      : []
   const priceList =
     Array.isArray(tourContent.price) && tourContent.price.length > 0
       ? tourContent.price
-      : fallbackTranslation.price || []
-  const notes = tourContent.notes || fallbackTranslation.notes || ""
+      : []
+  const notes = tourContent.notes || ""
 
   const translation = getTranslation(language)
   const toursText = translation.tours
@@ -109,7 +106,7 @@ const TourTemplate = ({ pageContext }) => {
     const numericAmount = Number(amount)
     if (Number.isFinite(numericAmount)) {
       return `${new Intl.NumberFormat(
-        language === "ru" ? "ru-RU" : "en-US"
+        getIntlLocale(language)
       ).format(numericAmount)} ֏`
     }
     return amount
