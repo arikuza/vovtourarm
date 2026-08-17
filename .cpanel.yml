@@ -3,6 +3,8 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ukalthqypssh/public_html/
     - /bin/mkdir -p "$DEPLOYPATH"
+    # Clean up leftovers from a previous maintenance-mode deploy (503 .htaccess)
+    - /bin/rm -f "$DEPLOYPATH/.htaccess" "$DEPLOYPATH/maintenance.php" "$DEPLOYPATH/maintenance.html"
     - /bin/cp -a cpanel_public/. "$DEPLOYPATH"
     - /bin/mkdir -p "$DEPLOYPATH/images"
     - /bin/cp -a static/images/. "$DEPLOYPATH/images"
