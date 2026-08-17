@@ -1,6 +1,7 @@
 # MAINTENANCE MODE — delete this file from public_html to bring the site back
+ErrorDocument 503 /maintenance.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{REQUEST_URI} !^/maintenance\.php$
-  RewriteRule ^ /maintenance.php [L]
+  RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+  RewriteRule ^ - [R=503,L]
 </IfModule>
