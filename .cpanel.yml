@@ -1,12 +1,8 @@
 ---
-# MAINTENANCE MODE: deploys a 503 maintenance page instead of the site.
-# To bring the site back, revert this commit and deploy again
-# (the restored .htaccess-free deploy overwrites maintenance files,
-# but also delete public_html/.htaccess and public_html/maintenance.html manually
-# or keep the cleanup tasks below in the restored config).
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ukalthqypssh/public_html/
     - /bin/mkdir -p "$DEPLOYPATH"
-    - /bin/cp -a maintenance/maintenance.html "$DEPLOYPATH"
-    - /bin/cp -a maintenance/.htaccess "$DEPLOYPATH"
+    - /bin/cp -a cpanel_public/. "$DEPLOYPATH"
+    - /bin/mkdir -p "$DEPLOYPATH/images"
+    - /bin/cp -a static/images/. "$DEPLOYPATH/images"
