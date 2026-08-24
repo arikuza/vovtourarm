@@ -201,7 +201,17 @@ body {
   overflow: hidden;
 }
 
-.hero-slide {
+/* Ротатор фоновых изображений (общий для всех страниц) */
+.bg-rotator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.bg-rotator-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -213,7 +223,7 @@ body {
   transition: opacity 1.5s ease;
 }
 
-.hero-slide.active {
+.bg-rotator-slide.active {
   opacity: 1;
 }
 
@@ -238,20 +248,12 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
-  margin-bottom: 0.5rem;
-  letter-spacing: -2px;
-  animation: fadeInUp 1s ease;
-}
-
-.hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  font-weight: 300;
+  line-height: 1.15;
   margin-bottom: 1rem;
-  color: var(--gray-text);
-  animation: fadeInUp 1s ease 0.2s;
-  animation-fill-mode: both;
+  letter-spacing: -1px;
+  animation: fadeInUp 1s ease;
 }
 
 .hero-description {
@@ -281,29 +283,6 @@ body {
   background: #a02622;
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(201, 48, 44, 0.3);
-}
-
-.hero-indicators {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 3;
-}
-
-.indicator {
-  width: 40px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.3);
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.indicator.active {
-  background: var(--light-text);
 }
 
 /* Tours Section */

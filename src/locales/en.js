@@ -6,8 +6,7 @@ export const en = {
     contact: "Contact"
   },
   hero: {
-    title: "Discover",
-    subtitle: "Armenia",
+    title: "Discover Armenia",
     description: "Journey through an ancient land where history meets hospitality",
     cta: "Explore Tours"
   },

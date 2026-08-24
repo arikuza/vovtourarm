@@ -62,21 +62,16 @@ export const tourImages = {
     "/images/9/photo_2025-10-19_17-23-59.jpg",
     "/images/9/photo_2025-10-19_17-24-00.jpg",
     "/images/9/photo_2025-10-19_17-24-02.jpg"
-  ],
-  "10": []
+  ]
 }
 
 export const backgrounds = [
   "/images/backgrounds/IMG_3928.JPG",
-  "/images/backgrounds/IMG_4890.JPG",
   "/images/backgrounds/IMG_5078.JPG",
-  "/images/backgrounds/IMG_5357.JPG",
-  "/images/backgrounds/IMG_6009.JPG",
-  "/images/backgrounds/IMG_6012.JPG",
   "/images/backgrounds/IMG_6300.JPG",
-  "/images/backgrounds/IMG_6313.JPG",
-  "/images/backgrounds/IMG_6327.JPG",
-  "/images/backgrounds/IMG_6725.JPG",
-  "/images/backgrounds/IMG_7464.JPG",
-  "/images/backgrounds/IMG_7478.JPG"
+  "/images/backgrounds/photo_2026-08-24_19-30-47.jpg",
+  "/images/backgrounds/photo_2026-08-24_19-31-24.jpg",
+  "/images/backgrounds/photo_2026-08-24_19-31-31.jpg",
+  "/images/backgrounds/photo_2026-08-24_19-33-26.jpg",
+  "/images/backgrounds/photo_2026-08-24_19-33-32.jpg"
 ]

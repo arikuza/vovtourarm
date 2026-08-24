@@ -6,8 +6,7 @@ export const zhCN = {
     contact: "联系"
   },
   hero: {
-    title: "探索",
-    subtitle: "亚美尼亚",
+    title: "探索亚美尼亚",
     description: "穿越古老土地，在历史与热情好客之间旅行",
     cta: "查看行程"
   },

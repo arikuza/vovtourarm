@@ -1,6 +1,7 @@
 import React from "react"
 import Navigation from "./Navigation"
 import { LanguageProvider } from "../context/LanguageContext"
+import "../styles/global.css"
 
 const Layout = ({ children }) => {
   return (

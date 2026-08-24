@@ -4,6 +4,7 @@ import { Link, withPrefix } from "gatsby"
 import { getTranslation } from "../locales"
 import { getIntlLocale, getTourContent } from "../data/tour-localization"
 import { tourImages, backgrounds } from "../data/image-manifest"
+import RotatingBackground from "../components/RotatingBackground"
 import "../styles/tour-page.css"
 
 const TourTemplate = ({ pageContext }) => {
@@ -147,9 +148,8 @@ const TourTemplate = ({ pageContext }) => {
   return (
     <Layout>
       <div className="tour-page">
-        <div className="tour-hero" style={{
-          backgroundImage: `url(${tourGalleryImages[0].url})`
-        }}>
+        <div className="tour-hero">
+          <RotatingBackground />
           <div className="tour-hero-overlay" />
           <div className="tour-hero-content">
             <Link to="/#tours" className="back-link">{toursText.backToTours}</Link>
