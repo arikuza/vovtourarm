@@ -8,6 +8,7 @@
     "start": "gatsby develop",
     "build": "CI=1 GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby build --prefix-paths",
     "build:cpanel": "CI=1 GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby build",
+    "build:pages": "CI=1 GATSBY_TELEMETRY_DISABLED=1 GATSBY_FEEDBACK_DISABLED=1 gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "predeploy": "npm run build",
     "serve": "gatsby serve --prefix-paths",
